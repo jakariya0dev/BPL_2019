@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:scaleType="fitXY"
+        android:src="@drawable/bpl2019" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="3dp"
+        android:layout_weight="5"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+
+        <LinearLayout
+            android:layout_marginBottom="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/timeId"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:background="@color/buttonColor"
+                android:onClick="timeTable"
+                android:text="@string/time_table"
+                android:textSize="30sp" />
+
+            <Button
+                android:layout_marginLeft="1dp"
+                android:id="@+id/teamId"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/buttonColor"
+                android:onClick="teamIntro"
+                android:text="@string/team_intro"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/liveId"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:background="@color/buttonColor"
+                android:onClick="Live"
+                android:text="@string/live"
+                android:textSize="30sp" />
+
+            <Button
+                android:layout_marginLeft="1dp"
+                android:id="@+id/historyId"
+                android:onClick="liveScore"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/buttonColor"
+                android:text="@string/live_score"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </WebView>
+
+    <Button
+        android:layout_margin="3dp"
+        android:onClick="Details"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:text="For More Details Click Here"
+        android:background="@color/buttonColor"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+</LinearLayout>

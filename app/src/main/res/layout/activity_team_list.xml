@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="4"
+    android:layout_margin="5dp"
+    tools:context=".Team_list">
+
+    <LinearLayout
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:onClick="rangpur"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F97F51"
+            android:scaleX="2"
+            android:text="@string/team_rng"
+            android:textAllCaps="false" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:onClick="dhaka"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="#f0932b"
+            android:text="@string/team_dha"
+            android:textAllCaps="false" />
+
+        <Button
+            android:onClick="rajshahi"
+            android:background="#EAB543"
+            android:textAllCaps="false"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/team_raj" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:onClick="chittagong"
+            android:layout_marginRight="5dp"
+            android:background="#EAB543"
+            android:textAllCaps="false"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/team_ctg" />
+
+        <Button
+            android:onClick="comilla"
+            android:background="#f0932b"
+            android:textAllCaps="false"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/team_com" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:onClick="khulna"
+            android:layout_marginRight="5dp"
+            android:background="#f0932b"
+            android:textAllCaps="false"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/team_khul" />
+
+        <Button
+            android:onClick="sylhet"
+            android:background="#EAB543"
+            android:textAllCaps="false"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/team_syl" />
+    </LinearLayout>
+
+</LinearLayout>

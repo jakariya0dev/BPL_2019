@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0b0628"
+    android:padding="2dp"
+    tools:context=".Details">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:background="@drawable/gradient"
+            android:padding="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:textStyle="italic"
+                android:padding="10dp"
+                android:background="@drawable/gradient2"
+                android:textColor="#fff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="@string/motive"
+                android:textSize="25sp"/>
+            <TextView
+                android:id="@+id/name"
+                android:textColor="#000"
+                android:paddingTop="20dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/name"
+                android:textSize="40sp" />
+            <TextView
+                android:textColor="#000"
+                android:paddingBottom="20dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/bdg"
+                android:textSize="30sp" />
+            <TextView
+
+                android:textColor="#0b0674"
+                android:textSize="30sp"
+                android:text="@string/featureHeading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+
+            <TextView
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Feature"/>
+
+            <TextView
+                android:padding="8dp"
+                android:textColor="#e1d3d3"
+                android:background="@drawable/gradient2"
+                android:layout_gravity="center"
+                android:textSize="30sp"
+                android:text="@string/coursse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_gravity="center"
+                android:textSize="25sp"
+                android:text="@string/my_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textStyle="italic"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/skill0"
+                android:textSize="20sp" />
+            <TextView
+                android:textStyle="italic"
+                android:textColor="#000"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:text="@string/skill1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/gp"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
